@@ -1,13 +1,13 @@
 {
-  "name": "lib-starter",
+  "name": "vue3-query-builder",
   "version": "0.0.1",
-  "main": "dist/lib-starter.cjs.js",
-  "module": "dist/lib-starter.es.js",
+  "main": "dist/vue3-query-builder.cjs.js",
+  "module": "dist/vue3-query-builder.es.js",
   "types": "types/index.d.ts",
   "exports": {
     ".": {
-      "import": "./dist/lib-starter.es.js",
-      "require": "./dist/lib-starter.cjs.js"
+      "import": "./dist/vue3-query-builder.es.js",
+      "require": "./dist/vue3-query-builder.cjs.js"
     },
     "./*": "./*"
   },
@@ -41,11 +41,12 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/agileago/lib-starter.git"
+    "url": "git+https://github.com/agileago/vue3-query-builder.git"
   },
-  "homepage": "https://agileago.github.io/lib-starter",
+  "homepage": "https://agileago.github.io/vue3-query-builder",
   "license": "MIT",
   "devDependencies": {
+    "@abraham/reflection": "^0.10.0",
     "@commitlint/cli": "^16.2.3",
     "@commitlint/config-conventional": "^16.2.1",
     "@release-it/conventional-changelog": "^4.3.0",
@@ -53,9 +54,11 @@
     "@types/prettier": "^2.6.0",
     "@typescript-eslint/eslint-plugin": "^5.20.0",
     "@typescript-eslint/parser": "^5.20.0",
+    "@vue3-oop/plugin-vue-jsx": "^1.4.0",
     "eslint": "^8.14.0",
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.0.0",
+    "injection-js": "^2.4.0",
     "lint-staged": "^12.4.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.6.2",
@@ -69,7 +72,8 @@
     "vite-tsconfig-paths": "^3.4.1",
     "vitepress": "^0.22.3",
     "vitest": "^0.9.4",
-    "vue": "^3.2.33"
+    "vue": "^3.2.33",
+    "vue3-oop": "^0.5.6"
   },
   "gitHooks": {
     "pre-commit": "lint-staged",
@@ -90,6 +94,7 @@
   },
   "release-it": {
     "git": {
+      "requireCleanWorkingDir": false,
       "commitMessage": "chore(release): ${version}",
       "tagName": "v${version}"
     },
@@ -114,5 +119,10 @@
         "@types/react"
       ]
     }
+  },
+  "peerDependencies": {
+    "injection-js": "*",
+    "vue": "*",
+    "vue3-oop": "*"
   }
 }

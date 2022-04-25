@@ -6,13 +6,18 @@
     "dev": "vite"
   },
   "dependencies": {
+    "ant-design-vue": "^3.2.1",
+    "injection-js": "^2.4.0",
     "typescript": "^4.6.3",
     "vue": "^3.2.33",
-    "vue-router": "^4.0.14"
+    "vue-router": "^4.0.14",
+    "vue3-oop": "^0.5.6"
   },
   "devDependencies": {
+    "@abraham/reflection": "^0.10.0",
+    "@vue3-oop/plugin-vue-jsx": "^1.4.0",
     "vite": "^2.9.5",
-    "vite-tsconfig-paths": "^3.4.1",
-    "vite-plugin-checker": "^0.4.6"
+    "vite-plugin-checker": "^0.4.6",
+    "vite-tsconfig-paths": "^3.4.1"
   }
 }
