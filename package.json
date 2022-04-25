@@ -1,6 +1,6 @@
 {
   "name": "vue3-query-builder",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "dist/vue3-query-builder.cjs.js",
   "module": "dist/vue3-query-builder.es.js",
   "types": "types/index.d.ts",
@@ -22,7 +22,6 @@
     "format": "prettier --write '**/*.{ts,tsx,js,css,scss,html,json}'",
     "chrome": "open -n /Applications/Google\\ Chrome.app/ --args --disable-web-security  --user-data-dir=$HOME/MyChromeDevUserData/",
     "release": "release-it",
-    "prepublishOnly": "run-s test build release",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
     "docs:serve": "vitepress serve docs"
