@@ -42,6 +42,6 @@ export class QueryBuilder extends VueComponent<QueryBuilderProps> {
   }
 
   render() {
-    return <div>querybuilder</div>
+    return <div>{this.props.rules}</div>
   }
 }
