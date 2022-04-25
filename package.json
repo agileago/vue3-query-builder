@@ -1,6 +1,6 @@
 {
   "name": "vue3-query-builder",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/vue3-query-builder.cjs.js",
   "module": "dist/vue3-query-builder.es.js",
   "types": "types/index.d.ts",
