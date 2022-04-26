@@ -1,9 +1,9 @@
 import '@abraham/reflection'
 import { createApp } from 'vue'
-import { QueryBuilder } from 'vue3-query-builder'
+import 'ant-design-vue/dist/antd.css'
 
 function App() {
-  return <QueryBuilder></QueryBuilder>
+  return <div></div>
 }
 
 const app = createApp(App)

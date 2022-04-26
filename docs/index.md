@@ -12,3 +12,9 @@ features:
 - title: vue3无ref编程
   details: 无需关注ref及其value，正常声明变量，编程体验更自然
 ---
+
+<QueryBuilder rules="cccc"></QueryBuilder>
+
+<script setup>
+import { QueryBuilder } from '../src/index'
+</script>
